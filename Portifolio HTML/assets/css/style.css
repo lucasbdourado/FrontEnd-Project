@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaf8ff;
+    display: grid;
+    grid-template-rows: 17vh 80vh 3vh;
+}
+
+header{
+    background-color: #002c42;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    padding: 2rem;
+    display: flex;
+}
+
+nav h3 + ul{
+    margin: 10px auto;
+    list-style: none;
+}
+
+article nav + div{
+    margin-left: 20px;
+    list-style: none;
+}
+
+nav{
+    width: 450px;
+}
+
+section{
+    width: 100%;
+}
+
+section img{
+    clip-path: circle();
+}
+
+section article{
+    display: flex;
+}
+
+div p + h4{
+    margin-top: 20px;
+}
+
+footer{
+
+    background-color: #002c42;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.width-100{
+    width: 100%;
+    background-color: aqua;
+}
+
+.info-form{
+    padding: 20px 0;
+}
+
+form{
+    width: 500px;
+    line-height: 30px;
+}
+
+input, select, textarea{
+    border: 2px solid #002c42;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+input[type="text"], input[type="email"], textarea, label, select{
+    display:block;
+    width: 100%;
+}
+
+input[type="submit"]{
+    width: 250px;
+    margin: 10px auto;
+    background-color: #bbdff1;
+    color:#002c42;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    width: 250px;
+    margin: 10px auto;
+    background-color:  rgb(0, 194, 0);
+    color: #eaf8ff;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        display: grid;
+    }
+
+    main,section, section article,nav{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    article nav + div{
+        margin: 0;
+    }
+
+    footer{
+        display: none;
+    }
+}

@@ -1,0 +1,31 @@
+table {
+    width: 80%;
+    overflow: auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    text-align: center;
+    padding: 1.2rem 1.5rem;
+    border: 1px solid #8b979c;
+}
+
+table thead tr:last-child{
+    background-color: #002c42;
+    color: white;
+}
+
+table tbody tr:nth-child(even){
+    background-color: #c4d3da;
+}
+
+th{
+    background-color: #002c42;
+    color: white;
+}
+
+table tfoot tr{
+    font-weight: bold;
+    background-color: #004e75;
+    color: white;
+}
