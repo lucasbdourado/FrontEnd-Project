@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc; 
+    font-family: 'Poppins', sans-serif;
+}
+
+table{
+    width: 600px; 
+    margin: 2rem auto; 
+    background-color: #fff; 
+    padding: 1.75rem 2.5rem;
+}
+
+h1, h2{
+    color: #00496d;
+}
+
+@media screen and (max-width:763px) {
+    table{
+        width: 100% !important;
+        min-width: 320px;
+    }
+
+    table tr{
+        margin: 1rem auto;
+    }
+
+    #img-body{
+        width: 100%;
+    }
+}
