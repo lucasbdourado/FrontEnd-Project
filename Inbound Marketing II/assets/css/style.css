@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@1,200&family=Poppins:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+
+::-webkit-scrollbar{
+    width: 0.1rem;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #ccc;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 100px 1fr 75px;
+    padding: 2rem;
+}
+
+main section{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 10px;
+    padding: 2rem;
+    background-color: #eaf8ff;
+}
+
+footer{
+    justify-self: center;
+    align-self: center;
+    background-color: #2a7ea8;
+    color: #eaf8ff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-top: 0.1rem solid #00496d;
+}
+
+
+header{
+    font-family: 'Kodchasan', sans-serif;
+    background-color: #2a7ea8;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    border-bottom: 0.1rem solid #00496d;
+}
+
+header h1{
+    color: #eaf8ff;
+    font-size: 3.2rem;
+}
+
+article{
+    line-height: 2.5rem;
+    width: 100%;
+}
+
+article img{
+    margin: 1.2rem auto;
+    width: 400px;
+    height: auto;
+}
+
+ul li{
+    border-bottom: 0.1rem solid #d8d8d8;
+    padding: 0.5rem;
+}
+
+ul li a{
+    display: block;
+    font-size: 1.4rem;
+    color: #00496d;
+    width: 100%;
+    height: 100%;
+}
+
+ul li:hover{
+    border-bottom-color: #00496d;
+    font-size: 1.6rem;
+    color: #00496d;
+    transition: ease-out 0.1s;
+}
+
+ul li a:hover{
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: ease-out 0.1s;
+}
+
+h1{
+    color: #00496d;
+    font-size: 2.6rem;
+}
+
+h2{
+    margin: 1rem 0;
+    color: #00496d;
+    font-size: 2.2rem;
+}
+
+h4{
+    margin: 1rem 0;
+    color: #00496d;
+    font-size: 1.8rem;
+}
+
+p{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.form{
+    width: 450px;
+}
+
+@media screen and (max-width:763px) {
+    
+    main section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    article img{
+        width: 245px;
+        height: auto;
+    }
+
+    .form{
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:463px) {
+    .form{
+        width: 245px;
+        margin: 0 auto;
+    }
+}
+
+.cog-abuse, .cog-branding, .cog-branding--minimal, .cog-branding__powered, .cog-branding__powered span, .cog-branding__powered {
+    display: none;
+    visibility: hidden !important;
+    opacity: 0.0;
+}
+
